@@ -1,0 +1,23 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        int contador = 1;
+        int numero;
+        int soma = 0;
+
+        do
+        {
+            Console.WriteLine("Digite o " + contador + "º número:");
+            numero = int.Parse(Console.ReadLine());
+
+            soma = soma + numero;
+            contador++;
+        }
+        while (contador <= 5);
+
+        Console.WriteLine("A soma dos 5 números é: " + soma);
+    }
+}
+
