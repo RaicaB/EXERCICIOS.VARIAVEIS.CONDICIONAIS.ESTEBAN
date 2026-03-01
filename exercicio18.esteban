@@ -1,0 +1,24 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        int idade;
+        int soma = 0;
+        int contador = 1;
+        double media;
+
+        while (contador <= 5)
+        {
+            Console.WriteLine("Digite a " + contador + "ª idade:");
+            idade = int.Parse(Console.ReadLine());
+
+            soma = soma + idade;
+            contador++;
+        }
+
+        media = (double)soma / 5;
+
+        Console.WriteLine("A média das idades é: " + media);
+    }
+}
