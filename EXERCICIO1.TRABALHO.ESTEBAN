@@ -1,0 +1,36 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        int n1, n2;
+        int soma, subtração, multiplicação;
+        double ddivisão;
+
+        Console.Write("Digite o primeiro número:");
+        n1 = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o segundo número:");
+        n2 = int.Parse(Console.ReadLine());
+
+        soma = n1 + n2;
+        subtração = n1 - n2;
+        multiplicação = n1 * n2;
+
+        if (n2 != 0)
+        {
+            ddivisão = (double)n1 / n2;
+        }
+        else
+        {
+            ddivisão = double.NaN;
+        }
+
+        Console.WriteLine("\nResultados:");
+        Console.WriteLine($"Soma: {soma}");
+        Console.WriteLine($"Subtração: {subtração}");
+        Console.WriteLine($"Multiplicação: {multiplicação}");
+        Console.WriteLine(n2 != 0 ? $"Divisão: {ddivisão}" : "Divisão: impossível (divisor igual a zero).");
+
+    }
+}
